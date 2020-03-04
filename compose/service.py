@@ -1799,6 +1799,7 @@ class _CLIBuilder(object):
         command_builder.add_arg("--tag", tag)
         command_builder.add_arg("--target", target)
         command_builder.add_arg("--iidfile", iidfile)
+        command_builder.add_params("--label",labels)
         args = command_builder.build([path])
 
         magic_word = "Successfully built "
